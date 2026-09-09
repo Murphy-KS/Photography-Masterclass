@@ -1,3 +1,20 @@
+/**1200px oder schmaler */
+@media (max-width: 75em) {
+  
+}
+/**992px oder schmaler */
+@media (max-width: 62em) {
+  
+}
+/**768px oder schmaler */
+@media (max-width: 48em) {
+  
+}
+/**576px oder schmaler */
+@media (max-width: 36em) {
+  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,20 +26,18 @@ html {
 }
 
 .container {
-  width: 75rem;
+  max-width: 75rem;
   margin: 0px auto;
 }
 
 .header__container {
   position: relative;
-  
 }
 
 .header {
   position: relative;
   height: 40rem;
-  bottom: 0px;
-  
+  min-height: calc(13rem + 32vw);
   overflow: hidden;
 }
 
