@@ -101,6 +101,22 @@ html {
         bottom: -4rem;
     }
 }
+@media (max-width: 62em) {
+    .header::before  {
+        bottom: -1rem;
+    }
+    .header::after {
+        bottom: -1rem;
+    }
+}
+@media (max-width: 36em) { 
+    .header::before {
+        background-size: cover;
+    }
+    .header::after {
+        display: none;
+    }
+}
 
 .icon {
     fill: currentColor;
@@ -115,6 +131,13 @@ html {
     display: block;
     float: left;
 }
+
+@media (max-width: 62em) {
+    .navigation__list-item--mobile-hidden {
+        display: none;
+    }
+}
+
 .navigation__list-item--menu {
     float: right;
     font-size: 3rem;
@@ -171,6 +194,19 @@ html {
     text-transform: uppercase;
     text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 62em) {
+    .header__heading-main {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .header__heading-main {
+        font-size: 3rem;
+    }
+}
+
+
 .header__heading-sub {
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -181,4 +217,9 @@ html {
     text-shadow: 0 0 0.5rem black;
     z-index: 1;
     position: relative;
+}
+@media (max-width: 48em) {
+    .header__heading-sub {
+        font-size: 1rem;
+    }
 }
